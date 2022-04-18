@@ -1,7 +1,8 @@
 #subclass of animal 
-class cat(Animal): #cat parent is Animal, evth animal has now the cat has 
+class cat(animal): #cat parent is Animal, evth animal has now the cat has 
     def speak(self): #new functionality #__init__is not missing, uses Animal version 
-        print("mew")
+        print("meow")
     def __str__(self): #overriden the str method of the animal class 
         return "cat:"+ str(self.name)+ str(self.age)
         
+class Person(animal):
