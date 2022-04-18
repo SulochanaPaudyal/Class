@@ -1,0 +1,17 @@
+class animal(object): #object: class parent 
+    def __init__(self, age):#_init_: how to create an instance #variable that refer to any instance 
+        self.age=age #data attribute age 
+        self.name=None #aasigning data attribute same but none 
+    def get_age(self):
+        return self.age
+    def get_name(self):
+        return self.name
+    def set_age(self):
+        self.age=newage
+    def set_name(self, newname=""):
+        self.name=newname
+    def _str_(self): #str method will say how to print object of this type
+        return "animal:" + str(self.name)+":"+str(self.age)
+
+    a=animal(3)
+    
